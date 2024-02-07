@@ -14,22 +14,27 @@
 <body>
     <div class="weather-app">
     <header>
-        <form>
-            <input type="search" placeholder="Enter a city..." required />
-            <input type="submit" value="Search" />
+        <form class="search-form">
+            <input type="search" placeholder="Enter a city..." required class="search-form-input"/>
+            <input type="submit" value="Search" class="search-form-button"/>
         </form>
     </header>
     <main>
+        <div class="weather-app-data">
         <div>
-        <h1>Kyiv</h1>
-        <p>
+        <h1 class="weather-app-city">Kyiv</h1>
+        <p class="weather-app-details">
             Tuesday 16:45, rain
             <br />
-            Humidity: 91%, Wind: 1m/s
+            Humidity: <strong>91%</strong>, Wind: <strong>1m/s</strong>
         </p>
         </div>
-        <div>🌧️2°C</div>
-  
+        <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌧️</div>
+            <div class="weather-app-temperature">2</div>
+            <div class="weather-app-unit">°C</div>
+        </div>
+        </div>
     </main>
     
 </body>
